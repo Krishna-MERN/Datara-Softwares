@@ -1,0 +1,113 @@
+import React, { useState } from "react";
+import "./Styles/adminpanel.css";
+import AdminNotices from "./AdminNotices";
+import JobApplicationForm from "./JobApplicationForm";
+import ViewApplication from "./ViewApplication";
+import Dashboard from "./Dashboard";
+
+const AdminPanel = () => {
+
+
+  const Logout = () => {
+    alert("Are You Sure to Log Out ?");{
+      window.close();
+         return;
+     }
+   }
+
+
+
+  const [activeComponent, setActiveComponent] = useState("Dashboard");
+
+  // List of components in the sidebar
+  const components = [
+    { name: "Dashboard", description: "Overview of system metrics." },
+    { name: "Mail", description: "" },
+    { name: "Notices", description: "Manage notices for the website." },
+    { name: "Newsletters", description: "Manage newsletters and subscriptions." },
+    { name: "Opportunities", description: "Manage Opportunities and Career." },
+    { name: "Application Form", description: "Manage Application Form and data." },
+    { name: "View Application", description: "View Application data." },
+    { name: "Products", description: "Manage and update products." },
+    { name: "Cirtificates", description: "Manage and update Cirtificates." },
+    { name: "Users", description: "Manage user accounts and roles." },
+    { name: "Settings", description: "Adjust system preferences." }, 
+    { name: "Log Out", description: "" },
+  ];
+
+  // Render the content for the selected component
+  const renderComponent = () => {
+    switch (activeComponent) {
+       case "Dashboard":
+        return <div>
+          <Dashboard />
+          </div>;
+       case "Mail":
+        return <div>
+           <iframe src="https://mail.google.com/mail/" ></iframe>
+          </div>;
+      case "Notices":
+        return <div>Manage Notices here.
+          <AdminNotices />
+          </div>;
+      case "Newsletters":
+        return <div>Manage Newsletters here.</div>;
+      case "Opportunities":
+        return <div> Manage Newsletters here.</div>;
+      case "Application Form":
+        return <div>Manage Application Form and Data here.
+          <JobApplicationForm />
+        </div>;
+      case "View Application":
+        return <div> <ViewApplication /></div>;
+      case "Products":
+        return <div>Manage Products here.</div>;
+      case "Cirtificates":
+        return <div>
+          <iframe src="https://verify-certificate-qo5a.vercel.app/upload.html" ></iframe>
+        </div>;
+      case "Users":
+        return <div>Manage Users here.</div>;
+      case "Settings":
+        return <div> Adjust Settings here.</div>;
+      case "Log Out":
+        return <div> <button onClick={Logout} className="submit-btn"> Confirm Log Out</button></div>;
+      default:
+        return <div>Select a component to manage.</div>;
+    }
+  };
+
+  return (
+    <div className="admin-panel">
+      {/* Sidebar */}
+      <div className="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+          {components.map((component) => (
+            <li
+              key={component.name}
+              className={activeComponent === component.name ? "active" : ""}
+              onClick={() => setActiveComponent(component.name)}
+            >
+              {component.name}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Main Content Area */}
+      <div className="content">
+        <h2>{activeComponent}</h2>
+        <p>
+          {
+            components.find((component) => component.name === activeComponent)
+              ?.description
+          }
+        </p>
+        <div className="component-manager">{renderComponent()}</div>
+      </div>
+    </div>
+  );
+};
+
+export default AdminPanel;
