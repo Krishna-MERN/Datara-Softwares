@@ -1,0 +1,93 @@
+/* Center the form */
+.container {
+  /* max-width: 600px; */
+  width: 93%;
+  margin: auto;
+  padding: 20px;
+  color: #000;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  /* Form Title */
+  .container h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  /* Label Styling */
+  .container label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #000000;
+  }
+  
+  /* Input and Textarea Styling */
+  .container input[type="text"],
+  .container input[type="email"],
+  .container input[type="tel"],
+  .container input[type="date"],
+  .container textarea ,
+  .container select{
+    width:95%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+  }
+  .container input[type="checkbox"]{
+    width:min-content;
+  }
+  /* Textarea Styling */
+  .container textarea {
+    height: 80px;
+    resize: vertical;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Input Focus Effect */
+  .container input:focus,
+  .container textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* File Input Styling */
+  .container input[type="file"] {
+    margin-top: 10px;
+    color: #000000;
+  }
+  
+  /* Submit Button Styling */
+  .container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #0c5db4;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .container button:hover {
+    background-color: #2d8ff9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  }
+  

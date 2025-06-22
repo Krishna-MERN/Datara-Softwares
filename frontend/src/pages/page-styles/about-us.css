@@ -1,0 +1,41 @@
+/* About Us Page Styles */
+.about-page {
+    color: rgb(255, 255, 255);
+  
+}
+li,p{
+  color:rgb(255, 255, 255);
+}
+.containers {
+    max-width: 1000px;
+    margin:0 auto 40px auto;
+    padding: 30px;
+    background-color: rgba(22, 28, 38, 0.308);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    transition: transform 0.3s ease;
+}
+
+
+.containers:hover {
+    transform: scale(1.05);
+}
+
+h1, h2 {
+    /* color: #f0ad4e; */
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.containers strong {
+    color: #278fff;
+}

@@ -1,0 +1,58 @@
+/* NoticeUpload.css */
+.notice-upload-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #dddddd;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.notice-upload-container h2, h3 {
+  text-align: center;
+  color: #000000;
+}
+
+.message {
+  text-align: center;
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+.form-group1 {
+  margin-bottom: 15px;
+}
+
+.form-group1 label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group1 input, textarea, button {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: #ffffff;
+  /* width: 95%; */
+  color: #000000;
+}
+#sub{
+  width:98%;
+}
+/* .form-group1 textarea {
+  resize: none;
+} */
+
+.form-group1 button {
+  background: #16377f;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.form-group1 button:hover {
+  background: #435fec;
+}

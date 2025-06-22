@@ -1,0 +1,83 @@
+.internshipformcontainer{
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  color: #000;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+form {  form {
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  font-weight:10;
+  display: block;
+  margin-top: 10px;
+  color: #212121;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+input:focus, select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.sub-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sub-btn :hover {
+  background-color: #0056b3;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  form {
+      max-width: 90%;
+      padding: 15px;
+  }
+
+  .sub-btn {
+      font-size: 14px;
+  }
+}
+}
