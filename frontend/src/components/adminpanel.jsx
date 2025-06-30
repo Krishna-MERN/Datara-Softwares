@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Styles/adminpanel.css";
 import UploadNotice from "./UploadNotice";
-import JobApplicationForm from "./JobApplicationForm";
+// import JobApplicationForm from "./JobApplicationForm";
 import ViewApplication from "./ViewApplication";
 import Dashboard from "./Dashboard";
 
@@ -29,7 +29,7 @@ const AdminPanel = () => {
     { name: "Application Form", description: "Manage Application Form and data." },
     { name: "View Application", description: "View Application data." },
     { name: "Products", description: "Manage and update products." },
-    { name: "Cirtificates", description: "Manage and update Cirtificates." },
+    { name: "Certificates", description: "Manage and update Cirtificates." },
     { name: "Users", description: "Manage user accounts and roles." },
     { name: "Settings", description: "Adjust system preferences." }, 
     { name: "Log Out", description: "" },
@@ -54,11 +54,23 @@ const AdminPanel = () => {
       case "Opportunities":
         return <div> Manage Newsletters here.</div>;
       case "Application Form":
-        return <div>Manage Application Form and Data here.
-          <JobApplicationForm />
+        return <div>Create & Manage Application Form and Data here.
+        <div>
+          <a href=""><button>Payment Form </button></a>
+          <a href=""><button>List Selected candidate </button></a>
+          <a href=""><button>Payment Form </button></a>
+          <a href=""><button>Project Submition form </button></a>
+        </div>
         </div>;
       case "View Application":
-        return <div> <ViewApplication /></div>;
+        return <div> <ViewApplication />
+         <div>
+          <a href=""><button>View Payment </button></a>
+          <a href=""><button>Selected Candidates  </button></a>
+          <a href=""><button>Payment Form </button></a>
+          <a href=""><button>View Project Submition </button></a>
+        </div>
+        </div>;
       case "Products":
         return <div>Manage Products here.</div>;
       case "Cirtificates":
@@ -74,7 +86,7 @@ const AdminPanel = () => {
     }
   };
 
-  return (
+  return( 
     <div className="admin-panel">
       {/* Sidebar */}
       <div className="sidebar">
@@ -104,6 +116,8 @@ const AdminPanel = () => {
         <div className="component-manager">{renderComponent()}</div>
       </div>
     </div>
+
+    
   );
 };
 export default AdminPanel;        

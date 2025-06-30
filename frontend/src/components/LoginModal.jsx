@@ -7,6 +7,7 @@ const LoginModal = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  
   const handleLogin = (e) => {
     e.preventDefault();
     // You can add authentication logic here
@@ -17,13 +18,16 @@ const LoginModal = () => {
         navigate("/employee-dashboard");
     }
     else if (role === "Intern") {
-        navigate("/InternDashboard"); 
+        navigate("/Internpage"); 
         alert("Open in Desktop mode or in PC/Laptop for better visuial experience ");
     }
     else if (role === "Admin") {
-     
+      if (password=="Admin@123"){
         navigate("/AdminDashboard");
-        
+      }
+      else{
+        alert("Invalid Password... OR You are not Authorized ");
+      }
         }
   };
 

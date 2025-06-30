@@ -31,9 +31,9 @@ const FAQ = () => {
         "Yes, all interns receive a certificate upon successful completion of their internship.",
     },
     {
-      question: "Can I get a certificate for completing an internship?",
+      question: "What type of project we get ?",
       answer:
-        "Yes, all interns receive a certificate upon successful completion of their internship.",
+        "we works on several software technologies like- web development , mobile app development , cloud solution ,custom software developement etc.",
     },
     {
       question: "Can I get a certificate for completing an internship?",

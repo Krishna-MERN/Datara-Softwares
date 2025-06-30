@@ -6,8 +6,8 @@ const Opportunities = () => {
     {
       title: "Senior Software Developer",
       duration: "Full-Time",
-      salary: "$80,000 - $100,000 per year",
-      location: "San Francisco, CA",
+      salary: "₹8-10LPA",
+      location: "Noida India",
       skills: ["JavaScript", "React", "Node.js"],
       description:
         "Join our team to develop scalable web applications and APIs, collaborate with cross-functional teams, and enhance our software solutions.",
@@ -15,8 +15,8 @@ const Opportunities = () => {
     {
       title: "PHP & MySQL Developer",
       duration: "Full-Time",
-      salary: "$80,000 - $100,000 per year",
-      location: "San Francisco, CA",
+      salary: "₹4-5LPA",
+      location: "Banglure India",
       skills: ["JavaScript", "React", "Node.js"],
       description:
         "Join our team to develop scalable web applications and APIs, collaborate with cross-functional teams, and enhance our software solutions.",
@@ -24,22 +24,14 @@ const Opportunities = () => {
     {
       title: "Student Ambassador",
       duration: "Part-Time",
-      salary: "Performance-Based",
+      salary: "Based on performance",
       location: "Remote",
       skills: ["Communication", "Networking", "Marketing"],
       description:
         "Represent our company on campus, promote our services, and build connections with students and faculty.",
     },
     
-    {
-      title: "Data Analyst Intern",
-      duration: "6 Months",
-      salary: "$15 - $20 per hour",
-      location: "New York, NY",
-      skills: ["Python", "SQL", "Data Visualization"],
-      description:
-        "Analyze datasets, create visualizations, and assist in developing data-driven insights for business decisions.",
-    },
+   
   ];
 
   return (

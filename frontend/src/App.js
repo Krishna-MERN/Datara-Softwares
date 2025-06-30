@@ -8,6 +8,7 @@ import TermsAndConditionspage from './pages/TermsAndConditionspage';
 import AdminDashboard from './pages/AdminDashboard';
 import Application from './pages/Application';
 import Servicepage from './pages/Servicepage';
+import Internpage from './pages/Internpage';
 import LoginModal from './components/LoginModal';
 // import InternDashboard from './components/InternDashboard';
 // import Internstatus from './components/Internstatus';
@@ -27,6 +28,7 @@ function App() {
         <Route path="/Application" element={<Application />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Servicepage" element={<Servicepage />} />
+        <Route path="/Internpage" element={<Internpage />} />
         <Route path="/TermsAndConditionspage" element={<TermsAndConditionspage />} />
       </Routes>
     </Router>

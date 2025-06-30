@@ -99,6 +99,19 @@ const DataManagementComponent = () => {
                   submission.role
                 )}
               </td>
+               <td>
+                {editMode === submission.id ? (
+                  <input
+                    type="text"
+                    value={editData.role}
+                    onChange={(e) =>
+                      setEditData({ ...editData, role: e.target.value })
+                    } 
+                  />
+                ) : (
+                  submission.mobile_no
+                )}
+              </td>
               <td>
                 {editMode === submission.id ? (
                   <button onClick={handleUpdate}>Save</button>

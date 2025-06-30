@@ -28,13 +28,14 @@ export default function InternAttendance() {
           className="id"
           required
         />
-        <div className="btn"> 
-          <input
+        <table ><div className="btn"> 
+          <th><td><input
             type="radio"
             checked={isPresent}
             onChange={() => setIsPresent(true)}
-          /><label>I am here to work</label>
-        </div>
+          /></td>
+          <td><label>I am here to work</label></td></th>
+        </div></table>
         <button type="submit" className="submit-btn">Mark Demographic</button>
       </form>
 
