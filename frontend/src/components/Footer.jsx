@@ -75,7 +75,7 @@ const Footer = () => {
               <i className="fab fa-instagram"></i>
             </a>
             <a href="#" aria-label="LinkedIn">
-              <i className="fab fa-linkedin-in"></i>
+              <i className="fab fa-linkdin"></i>
             </a>
             
           </div>
