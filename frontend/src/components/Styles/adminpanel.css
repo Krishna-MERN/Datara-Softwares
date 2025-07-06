@@ -64,6 +64,21 @@ body {
   margin-bottom: 20px;
   color: #ffffff;
 }
+.applicationbtn{
+    display: flex;
+  justify-content: space-between;
+}
+.applicationbtn button{
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+ 
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
 
 .component-manager {
   background-color: #7d7d7d;

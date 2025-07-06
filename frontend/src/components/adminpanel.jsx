@@ -55,7 +55,7 @@ const AdminPanel = () => {
         return <div> Manage Newsletters here.</div>;
       case "Application Form":
         return <div>Create & Manage Application Form and Data here.
-        <div>
+        <div class="applicationbtn">
           <a href=""><button>Payment Form </button></a>
           <a href=""><button>List Selected candidate </button></a>
           <a href=""><button>Payment Form </button></a>
@@ -63,12 +63,13 @@ const AdminPanel = () => {
         </div>
         </div>;
       case "View Application":
-        return <div> <ViewApplication />
-         <div>
-          <a href=""><button>View Payment </button></a>
-          <a href=""><button>Selected Candidates  </button></a>
-          <a href=""><button>Payment Form </button></a>
-          <a href=""><button>View Project Submition </button></a>
+        return <div> 
+          {/* <ViewApplication /> */}
+         <div class="applicationbtn">
+          <a href=""><button >View Payment </button></a>
+          <a href=""><button >Selected Candidates  </button></a>
+          <a href=""><button >Payment Form </button></a>
+          <a href=""><button >View Project Submition </button></a>
         </div>
         </div>;
       case "Products":
