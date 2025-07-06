@@ -9,10 +9,10 @@ const AboutUs = () => {
     <div className="about-page"> <Navbar />
             <section className="containers intro">
                 <h1>About Us</h1>
-                <p><strong>Innovating the Digital Future — One Solution at a Time</strong></p>
-                <p>
+                <h3><strong>Innovating the Digital Future — One Solution at a Time</strong></h3>
+                <h4>
                     Welcome to <strong>Datara Softwares</strong>, your reliable partner in cutting-edge software development and digital transformation. We are a dynamic team of passionate technologists, creative designers, and forward-thinking innovators dedicated to crafting impactful digital solutions. At Datara Softwares, we believe in the power of technology to transform businesses and improve everyday life. Our goal is to build intelligent, scalable, and user-centric applications that not only meet the demands of the present but also prepare businesses for the future. Whether it’s streamlining operations, enhancing customer experiences, or unlocking new opportunities, we are committed to empowering your growth through innovation and excellence.
-</p>
+</h4>
             </section>
 
             <section className="containers who-we-are">

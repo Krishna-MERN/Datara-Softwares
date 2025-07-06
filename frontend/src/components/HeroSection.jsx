@@ -36,7 +36,7 @@ const HeroSection = () => {
         <h1><span ref={headingRef} ><span id='tag'>Empowering </span>Businesses with Cutting-Edge Technology</span> </h1>  
         <h2><span id="title">Delivering scalable, secure, and user-friendly digital solutions.</span></h2>
         <h2>43+ Projects Delivered</h2>
-        <h2>Trusted by 36+ Global Clients</h2>
+        <h2>Trusted by 6+ Global Clients</h2>
         <a href='Contact'><button className='Primary-btn111'>Get a Free Consultation</button></a>
         <a href='AboutUs'><button className='secondry-btn111'>Learn More About Us</button></a>
         </div>

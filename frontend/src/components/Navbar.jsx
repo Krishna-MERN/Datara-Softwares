@@ -33,7 +33,7 @@ const Navbar = () => {
         {/* Brand Section */}
         <Link to="/" className="navbar-brand">
           <img src={logo} alt="logo" className="navbar-logo" />
-          <span>Datara Softwares</span>
+          <span className='gradient-text'>Datara Softwares</span>
         </Link>
 
         {/* Hamburger Menu Icon */}

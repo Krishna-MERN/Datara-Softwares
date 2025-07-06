@@ -26,7 +26,7 @@
 .service-card {
   background-color: #13223ca4;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgb(255, 255, 255);
+   box-shadow: 0 4px 5px rgb(122, 164, 216);
   padding: 20px;
   width: 220px;
   text-align: center;
@@ -34,9 +34,10 @@
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.2);
+   box-shadow: 0 4px 10px rgb(255, 255, 255);
 }
+
 
 /* Image in Circular Frame */
 .image-container {

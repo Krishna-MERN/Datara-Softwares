@@ -34,7 +34,8 @@ const Services = () => {
   ];
 
   return (
-  <section className="services-section">
+
+  <section className="services-section ">
        <h2 className="section-title">Our Software Services</h2>
        <a id="anchor" href="/Servicepage">
        <div className="cards-container">
@@ -49,6 +50,7 @@ const Services = () => {
         ))}
       </div></a>
     </section>
+   
   );
 };
 

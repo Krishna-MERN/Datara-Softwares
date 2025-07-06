@@ -8,6 +8,7 @@ import FAQ from '../components/FAQ';
 import ChatBot from '../components/ChatBot';
 import ClientReviews from '../components/ClientReviews';
 import Opportunities from '../components/Opportunities';
+import ProductSlider from '../components/ProductSlider';
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
     <div>
       <Navbar />
       <HeroSection />
+      <ProductSlider />
       <Services /> 
       <Opportunities />
       <Notices />

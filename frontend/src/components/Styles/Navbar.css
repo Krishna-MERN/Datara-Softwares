@@ -16,7 +16,13 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-
+ .gradient-text {
+      font-size: 2rem;
+      font-weight: bold;
+      background: linear-gradient(90deg,#ffffff, #007bff );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 /* Brand Section */
 .navbar-brand {
   display: flex;
@@ -54,7 +60,7 @@
 
 /* Login Button */
 .btn-login {
-  background-color: #252525;
+  background-color: #007bff;
   color: #ffffff;
   border: none;
   padding: 8px 15px;
